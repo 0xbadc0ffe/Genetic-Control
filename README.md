@@ -5,3 +5,9 @@ See the paper LQR_GA.pdf.
 
 
 Soon i'll beautify this repo.
+
+
+# TODO
+
+Feedback Mean GA - how well does it works? 
+
