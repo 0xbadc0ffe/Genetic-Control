@@ -186,9 +186,9 @@ def test_controller_3(Q,R, ref=1):
     BpWeight = 3    # Bandwidth
     OvWeight = 4    # Overshoot
     IntWeight = 3   # Tracking
-    CeWeight = 2     # Control Effort
+    CeWeight = 0.2  # Control Effort
 
-    res = IntWeight*sum/cnt + abs(max_e)*OvWeight + os_time/cnt*BpWeight + CeWeight*float(R[1:-1])
+    res = IntWeight*sum/cnt + abs(max_e)*OvWeight + os_time/cnt*BpWeight # + CeWeight*1/(float(R[1:-1]))
 
 
     #print(sum,cnt,max_e)
